@@ -1,0 +1,71 @@
+body{
+    font-family: Arial, sans-serif;
+    background:#eef2f5;
+    margin:0;
+    padding:40px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.marketing-banner{
+    background:#1f4b57;
+    color:white;
+    padding:18px;
+    border-radius:40px;
+    text-align:center;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.title{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.content{
+    display:flex;
+    gap:30px;
+}
+
+.benefits{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    flex:2;
+}
+
+.item{
+    display:flex;
+    gap:12px;
+    margin-bottom:18px;
+}
+
+.check{
+    color:#2ecc70bd;
+    font-size:20px;
+}
+
+.item strong{
+    font-size:16px;
+}
+
+.item p{
+    margin:2px 0 0;
+    color:#555;
+}
+
+.stats{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    flex:1;
+}
+
+.chart{
+    font-size:40px;
+    margin-bottom:10px;
+}
