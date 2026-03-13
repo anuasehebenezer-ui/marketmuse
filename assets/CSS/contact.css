@@ -1,0 +1,94 @@
+/* --- Global Styles --- */
+:root {
+  --primary-blue: #007bff;
+  --dark-blue: #0056b3;
+  --text-gray: #555;
+  --light-bg: #f4f7f9;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: var(--light-bg);
+  background-image: url('../images/WhatsApp\ image.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* --- Header & Hero Section --- */
+.hero-section {
+   background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%);
+  color: var(--white);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+/* --- Main Content Layout --- */
+.container {
+  max-width: 1000px;
+  margin: 0px auto 40px; 
+  display: flex;
+  gap: 150px;
+  padding: 0 20px;
+}
+
+/* --- Info & Form Cards --- */
+.card {
+  background: var(--white);
+  padding: 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(17, 12, 136, 0.1);
+  flex: 1;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.info-item i {
+  color: var(--primary-blue);
+  margin-right: 25px;
+  font-size: 1.2rem;
+}
+
+/* --- Form Elements --- */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+.get{
+    text-align: center;
+
+}
+button {
+  background-color: var(--primary-blue);
+  color: rgb(215, 226, 228);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: rgb(6, 6, 167);
+}
