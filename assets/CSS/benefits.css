@@ -1,71 +1,195 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.hero {
+    /* Blue gradient background from the image */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%);
+    color: white;
+    padding: 60px 20px;
+    text-align: left;
+    min-height: 200px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 40px;
+}
+
+/* CTA Form Styling */
+.cta-form {
+    display: flex;
+    max-width: 450px;
+    margin-bottom: 60px;
+    background: white;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.cta-form input {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.cta-form button {
+    background: #007bff; /* Primary blue button color */
+    color: white;
+    border: none;
+    padding: 0 25px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.cta-form button:hover {
+    background: #0056b3;
+}
+
+/* Benefits Bar Styling */
+.benefits-bar {
+    display: flex;
+    gap: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 30px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;   
+    gap: 12px;
+}
+
+.benefit-item i {
+    font-size: 1.5rem;
+}
+
+.benefit-item span {
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    h1 { font-size: 2.2rem; }
+    .benefits-bar { flex-direction: column; gap: 10px; }
+    .cta-form { flex-direction: column; background: transparent; padding: 0; }
+    .cta-form input { border-radius: 5px; margin-bottom: 5px; }
+    .cta-form button { padding: 10px; border-radius: 2px; }
+}
+/* General Styles */
+body {
     font-family: Arial, sans-serif;
-    background:#eef2f5;
-    margin:0;
-    padding:40px;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.marketing-banner{
-    background:#1f4b57;
-    color:white;
-    padding:18px;
-    border-radius:40px;
-    text-align:center;
-    font-size:20px;
-    margin-bottom:30px;
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: left;
 }
 
-.title{
-    font-size:32px;
-    margin-bottom:20px;
+.hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+
+.cta-form {
+    margin: 30px 0;
+    display: flex;
 }
 
-.content{
-    display:flex;
-    gap:30px;
+.cta-form input {
+    padding: 12px;
+    width: 250px;
+    border: none;
 }
 
-.benefits{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    flex:2;
+.cta-form button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.item{
-    display:flex;
-    gap:12px;
-    margin-bottom:18px;
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    font-weight: bold;
 }
 
-.check{
-    color:#2ecc70bd;
-    font-size:20px;
+/* Benefits Section */
+.benefits {
+    padding: 60px 0;
+    text-align: left;
 }
 
-.item strong{
-    font-size:16px;
+.subtitle { color: #666; margin-bottom: 40px; }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.item p{
-    margin:2px 0 0;
-    color:#555;
+.card {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    background: #fff;
 }
 
-.stats{
-    background:white;
-    border-radius:15px;
-    padding:30px;
-    text-align:center;
-    flex:1;
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-.chart{
-    font-size:40px;
-    margin-bottom:10px;
+.icon {
+    background: #28a745;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+img {
+    display: flex;
+    scroll-margin-left: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
 }
