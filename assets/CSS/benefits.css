@@ -46,7 +46,7 @@ p {
     display: flex;
     max-width: 450px;
     margin-bottom: 60px;
-    background: white;
+    background: rgb(27, 20, 162);
     border-radius: 5px;
     padding: 4px;
 }
@@ -123,7 +123,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-    color: white;
+    color: rgb(242, 242, 242);
     padding: 80px 0;
     text-align: left;
 }
@@ -144,7 +144,7 @@ body {
 .cta-form button {
     padding: 12px 25px;
     background-color: #007bff;
-    color: white;
+    color: rgb(246, 243, 243);
     border: none;
     cursor: pointer;
 }
@@ -162,7 +162,7 @@ body {
     text-align: left;
 }
 
-.subtitle { color: #666; margin-bottom: 40px; }
+.subtitle { color: #989595; margin-bottom: 40px; }
 
 .card-grid {
     display: grid;
@@ -173,8 +173,8 @@ body {
 .card {
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    background: #fff;
+    box-shadow: 0 4px 15px rgba(78, 5, 205, 0.05);
+    background: #e8e5e5;
 }
 
 .icon-header {
@@ -194,8 +194,13 @@ body {
 img {
     display: flex;
     scroll-margin-left: auto;
-    width: 300px;
-    height: 300px;
     object-fit: cover;
     object-position: center;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url(../images/WhatsApp\ image.jpeg);
+    background-size: cover;
+    background-position: center;
 }
