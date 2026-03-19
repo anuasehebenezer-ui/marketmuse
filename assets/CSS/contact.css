@@ -61,6 +61,7 @@
 }
 .navbar ul li a.button:hover{
     background-color: #357ab8;
+    color: #ffffff;
 
 }
 .navbar ul li.dot::after{
@@ -276,8 +277,11 @@ cursor:pointer;
 background:#1b5ec7;
 }
 @media  screen and (max-width: 736px) {
-.navbar{
-    
+body{
+    overflow-x: hidden;
+}
+    .navbar{
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 20px 0;
     text-align: center;

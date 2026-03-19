@@ -53,6 +53,7 @@
 }
 .navbar ul li a.button:hover{
     background-color: #357ab8;
+    color: #ffffff;
 
 }
 .navbar ul li.dot::after{
@@ -192,7 +193,7 @@ p {
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
 .cta-form button:hover {
