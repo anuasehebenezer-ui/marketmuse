@@ -146,12 +146,9 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   color: #333;
-  background-color: var(--light-bg);
-  background-image: url('/assets/images/contact.jpeg');
+  background-image: url('../images/contact.jpeg');
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 100vh;
 }
 
 /* HERO SECTION */
@@ -176,7 +173,6 @@ opacity:0.9;
 /* CONTACT SECTION */
 
 .contact-section{
-background:#f3f6fb;
 padding:70px 10%;
 }
 
@@ -278,4 +274,16 @@ cursor:pointer;
 
 .contact-form button:hover{
 background:#1b5ec7;
+}
+@media  screen and (max-width: 736px) {
+.navbar{
+    
+    flex-direction: column;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 70px;
+    position: absolute;
+}
 }
