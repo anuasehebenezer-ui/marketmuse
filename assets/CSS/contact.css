@@ -18,9 +18,12 @@
     height: 100px;
     border-radius: 10px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    
+     position: sticky;
+    top: 0px;
+    left: 0px;
 }
 .navbar .logo{
     font-size: 22px;
@@ -38,6 +41,9 @@
 .navbar ul li{
     position: relative;
 }
+.navbar .logo .blue{
+  color: #007bff;
+}
 .navbar ul li a{
     text-decoration: none;
     color: #2c3e50;
@@ -47,6 +53,7 @@
     gap: 5px;
     padding: 6px 12px;
     border-radius: 5px;
+    text-transform: capitalize;
     transition: all 0.2s ease-in-out;
 }
 .navbar ul li a:hover{
